@@ -1,0 +1,65 @@
+<html>
+   <head>
+      <title>JQuery Assignment</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script type="text/javascript" src="js/validation.js"></script>
+   </head>
+   <body>
+      <h1>Hello JQuery</h1>
+      <hr>
+      <div class="contact-form"> 
+         <h2>Contact form</h2>
+         <form id="form" method="post" action="">
+            <div>
+               <input type="text" class="input-field" id="name" placeholder=" Name"><p id="name_error"></p> 
+            </div>
+            <br>
+            <div>
+               <input type="text" class="input-field" id="phone" placeholder=" Phone Number"> <p id="phone_error"></p>
+            </div>
+            <br>
+            <div>
+               <input type="text" class="input-field" id="email" placeholder=" Email"> <p id="email_error"></p>
+               <br>
+            </div>
+            <br>
+             <div>
+               <input type="text" class="input-field" id="confirmEmail" placeholder=" Confirm Email"><p id="confirmEmail_error"></p>
+            </div>
+            <br>
+             <div>
+               <input type="text" class="input-field" id="st_address" placeholder=" Street Address"><p id="st_addr"></p>
+            </div>
+            <br>
+             <div>
+               <input type="text" class="input-field" id="city" placeholder=" City"><p id="city_err"></p>
+            </div>
+            <br>
+            <div>
+               <input type="text" class="input-field-state" id="state" placeholder=" State"><p id="state_err"></p>
+               <input type="text" class="input-field-state" id="zip" placeholder=" Zip"><p id="zip_err"></p>
+            </div>
+            <br>
+            <div class="datepicker">
+              <input type="text" id="srt-dt-picker" placeholder="Start Date"><br>
+              <input type="text" id="end-dt-picker" placeholder="End Date"><br>
+            </div>  
+            <br>
+            <input type="submit" id="submit" value="Submit">
+         </form> 
+      </div>
+      
+      <script>
+        $( function() {
+          $( "#srt-dt-picker" ).datepicker();
+        } );
+        $( function() {
+          $( "#end-dt-picker" ).datepicker();
+        } );
+      </script>
+   </body>
+</html>
